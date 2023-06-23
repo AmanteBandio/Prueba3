@@ -1,0 +1,150 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #0c0101;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #5598c9;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #0905e9;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+span.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #3c05ed;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    /* Cambiado de 'row' a 'column' */
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+}
+
+.doctores-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.doctor-card {
+    width: 300px;
+    margin: 40px;
+    /* Aumenta el valor para aumentar la separación */
+    background-color: #5598c9;
+    padding: 10px;
+    border: 1px solid #01e1ff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.doctor-image {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+    .form-field {
+        align-items: flex-start;
+    }
+    .form-field label {
+        width: auto;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .form-field input,
+    .form-field select {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 425px) {
+    .form-field label {
+        text-align: left;
+    }
+    .form-field input,
+    .form-field select {
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 600px) {
+    .form-field {
+        align-items: center;
+        flex-direction: row;
+        /* Restaurar la dirección de fila */
+    }
+    .form-field label {
+        margin-right: 10px;
+        text-align: right;
+    }
+}
